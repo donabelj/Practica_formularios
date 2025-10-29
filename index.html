@@ -3,26 +3,117 @@
 
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario</title>
+
+    <style>
+
+
+    </style>
+
 </head>
 
 <body>
+    <H1 style="text-align: center; color: blue;">Formulario de inscripción</H1>
+    <form action="">
+        <label for="Fecha">Fecha</label>
+        <input type="date" id="Fecha" name="Fecha">
+        <br><br>
+        <fieldset id="DATOS-SERVICIOS">
+            <legend>DATOS DEL SERVICIO:</legend>
+            <label for="servicio/curso solicitado">Servicio/curso solicitado</label>
+            <input placeholder="nombre del curso" type="text" id="servicio/curso solicitado" name="servicio/curso solicitado"><br>
+            Horario disponible
+            <label for="nombre">Mañana</label>
+            <input type="checkbox" id="Mañana" name="Mañana">
+            <label for="nombre">Tarde</label>
+            <input type="checkbox" id="Tarde" name="Tarde">
+            <label for="Noche">Noche</label>
+            <input type="checkbox" id="Noche" name="Noche"><br>
+        </fieldset>
 
-    <h1>Practicacs formularios en HTML/HTML5</h1>
 
-    <ul>
-        <li>
-            <a href="lazaro.html">Formulario Lazaro Pachecho</a>
-        </li>
-        <li>
-            <a href="lazaro.html">Formulario Lazaro Pachecho</a>
-        </li>
-        <li>
-            <a href="lazaro.html">Formulario Lazaro Pachecho</a>
-        </li>
+        <!--        <h2 style="background-color: aquamarine;">Datos personales</h2>
+ -->
 
-    </ul>
+        <fieldset id="DATOS-PERSONALES">
+            <legend>DATOS PERSONALES:</legend>
+            <label for="Nombre completo">Nombre completo
+                <input placeholder="JUAN" type="text" id="Nombre completo" name="Nombre completo">
+            </label>
+
+            <label  for="Apellidos completo">Apellidos completo</label>
+            <input placeholder="PEREZ RODRIGUEZ" type="text" id="Apellidos completo" name="Apellidos completo"><br>
+            Sexo:
+            <label for="Nombre">M</label>
+            <input type="radio" id="M" name="genero">
+            <label for="Nombre">F</label>
+            <input type="radio" id="F" name="genero"><br>
+            <label for="Alergias">Alergias</label>
+            <input type="text" id="Alergias" name="Alergias"><br>
+            <label for="Fecha de nacimiento">Fecha de nacimiento</label>
+            <input type="date" id="Fecha de nacimiento" name="Fecha de nacimiento"><br>
+            <label for="Lugar de nacimiento">Lugar de nacimiento</label>
+            <input type="text" id="Lugar de nacimiento" name="Lugar de nacimiento"><br>
+            <label for="Edad">Edad</label>
+            <input type="text" id="Edad" name="Edad"><br>
+            Estado civil:
+            <label for="Estado civil">soltero/a</label>
+            <input type="radio" id="soltero/a" name="estadoCivil">
+            <label for="Estado civil">Casado/a</label>
+            <input type="radio" id="Casado/a" name="estadoCivil">
+            <label for="Estado civil">Divorciado/a</label>
+            <input type="radio" id="Divorciado/a" name="estadoCivil"><br>
+            <label for="TELF. de casa">TELF. de casa</label>
+            <input type="text" id="TELF. de casa" name="TELF. de casa">
+            <label for="N.Celular">N.Celular</label>
+            <input type="text" id="N.Celular" name="N.Celular"><br>
+            <label for="E-mail">E-mail</label>
+            <input type="mail" id="E-mail" name="E-mail"><br>
+            <label for="Dirección de domicilio">Dirección de domicilio</label>
+            <input type="text" id="Dirección de domicilio" name="Dirección de domicilio"><br>
+
+            <label for="Profesión">Profesión</label>
+            <input type="text" id="Profesión" name="Profesión"><br>
+            <label for="Ocupación u oficio">Ocupación u oficio</label>
+            <input type="text" id="Ocupación u oficio" name="Ocupación u oficio"><br>
+
+        </fieldset>
+
+
+        <fieldset>
+            <legend>DATOS EDUCACIONALES:</legend>
+            <label for="Grado de estudios">Grado de estudios:</label>
+            <br><br>
+            <input type="radio" id="Basico" name="Grado de estudios">
+            <label for="Grado de estudios">Media</label>
+            <input type="radio" id="Media" name="Grado de estudios">
+            <label for="Grado de estudios">Técnico</label>
+            <input type="radio" id="Técnico" name="Grado de estudios">
+            <label for="Grado de estudios">Universitario</label>
+            <input type="radio" id="Universitario" name="Grado de estudios">
+        </fieldset>
+
+        <fieldset id="DATOS-ADICIONALES">
+            <legend>DATOS ADICIONALES:</legend>
+            <label for="contact-emergencia">Contacto de Emergencia:</label>
+            <input type="text" id="contact-emergencia" name="Nombre de contacto"><br>
+            <label for="contact-emergencia">Telefono:</label>
+            <input pattern="\d{3}-\d{3}-\d{4}" placeholder="xxx-xxx-xxxx" type="tel" id="tel-emergencia" name="tel-emergencia"><br>
+        </fieldset>
+
+
+
+        <br>
+
+        <label for="firma">FIRMA:</label>
+        <input type="text">
+
+        <input type="submit" value="Enviar solicitud">
+    </form>
+
+
 
 </body>
 
